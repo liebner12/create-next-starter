@@ -19,7 +19,7 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "jsx-a11y", "prettier"],
+  "plugins": ["react", "jsx-a11y", "prettier", "testing-library"],
   "rules": {
     "@typescript-eslint/no-unused-vars": "error",
     "prettier/prettier": "error",
@@ -34,6 +34,13 @@
         "project": ["./tsconfig.json"]
       },
       "plugins": ["@typescript-eslint"]
+    },
+    {
+      "files": [
+        "**/__tests__/**/*.[jt]s?(x)",
+        "**/?(*.)+(spec|test).[jt]s?(x)"
+      ],
+      "extends": ["plugin:testing-library/react"]
     }
   ]
 }
