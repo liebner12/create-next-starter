@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import HelloWorld from '../components';
 
 const Home: NextPage = () => {
   return (
@@ -12,6 +13,7 @@ const Home: NextPage = () => {
 
       <main>
         <h1>Hello world!</h1>
+        <HelloWorld />
       </main>
     </div>
   );
