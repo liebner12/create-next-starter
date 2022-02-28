@@ -1,7 +1,7 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-echo '👨‍🔬🛠️ Styling, testing and building'
+echo '🖌️⚗️⚒️ Styling, testing and building'
 
 npm run check-types || (
     echo '🌋Type check ERROR'
