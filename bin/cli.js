@@ -16,7 +16,7 @@ if (!repoName) {
 }
 const gitCheckoutCommand = `git clone https://github.com/liebner12/create-next-starter-repo ${repoName}; cd ${repoName}; rm -r -fo .git;`;
 const installDepsCommand = `yarn`;
-
+console.log(gitCheckoutCommand);
 console.log(`🤖 Cloning the repository with name ${repoName}`);
 
 const checkedOut = runCommand(gitCheckoutCommand);
