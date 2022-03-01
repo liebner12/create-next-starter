@@ -44,3 +44,50 @@ public/sw.js.map
 public/worker-*.js
 tsconfig.tsbuildinfo
 dist
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/starter/node_modules
+/starter/.pnp
+/starter/.pnp.js
+
+# testing
+/starter/coverage
+
+# next.js
+/starter/.next/
+/starter/out/
+
+# production
+/starter/build
+
+# misc
+/starter/.DS_Store
+/starter/*.pem
+
+# debug
+/starter/npm-debug.log*
+/starter/yarn-debug.log*
+/starter/yarn-error.log*
+/starter/.pnpm-debug.log*
+
+# local env files
+/starter/.env.local
+/starter/.env.development.local
+/starter/.env.test.local
+/starter/.env.production.local
+
+# vercel
+/starter/.vercel
+
+# typescript
+/starter/*.tsbuildinfo
+
+/starter/public/workbox-*.js
+/starter/public/workbox-*.js.map
+/starter/public/sw.js
+/starter/public/sw.js.map
+/starter/public/worker-*.js
+/starter/tsconfig.tsbuildinfo
+/starter/dist

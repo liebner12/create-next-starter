@@ -14,7 +14,7 @@ if (!repoName) {
   console.log('☠️❌ Please add name for repository');
   process.exit(-1);
 }
-const gitCheckoutCommand = `git clone --depth 1 https://github.com/liebner12/create-next-starter ${repoName}`;
+const gitCheckoutCommand = `git clone --depth 1 --filter=blob:none --sparse https://github.com/liebner12/create-next-starter ${repoName}`;
 const installDepsCommand = `cd ${repoName} && yarn`;
 
 console.log(`🤖 Cloning the repository with name ${repoName}`);
