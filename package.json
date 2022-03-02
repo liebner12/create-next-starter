@@ -1,6 +1,6 @@
 {
   "name": "create-next-ts-starter",
-  "version": "0.0.0-development",
+  "version": "2.0.3-development",
   "bin": "./bin/cli.js",
   "license": "MIT",
   "scripts": {
@@ -24,5 +24,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "rimraf": "^3.0.2"
   }
 }
