@@ -15,7 +15,7 @@ if (!repoName) {
   process.exit(-1);
 }
 const gitCheckoutCommand = `git clone https://github.com/liebner12/create-next-starter-repo ${repoName} && cd ${repoName} && npx rimraf .git`;
-const installDepsCommand = `yarn`;
+const installDepsCommand = `cd ${repoName} && yarn`;
 console.log(`🤖 Cloning the repository with name ${repoName}`);
 
 const checkedOut = runCommand(gitCheckoutCommand);
